@@ -1,0 +1,20 @@
+{
+  "name": "nyr-scca",
+  "version": "0.0.0",
+  "authors": [
+    "jsherman <jacob@jbsherman.com>"
+  ],
+  "description": "SCCA New York Region Solo",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}

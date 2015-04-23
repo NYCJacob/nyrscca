@@ -1,0 +1,130 @@
+.sponsors{
+    padding: .8em;
+}
+.img-box {
+    display: inline-block;
+    padding: 3px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/*quote styling modeled from css-tricks.com*/
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-size: 1em;
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+.testimonials{
+    background: url("http://placehold.it/350x150");
+}
+/*end blockquote styles*/
+
+/*Superfish nav menu styles*/
+
+.sf-menu{
+    min-height:36px;
+    padding:0;
+    margin:0;
+}
+.sf-menu ul{
+    position:absolute;
+    top:-999em;
+    width:185px;
+    left:0;
+    display:none;
+    background:#333;
+    list-style: none;
+}
+.sf-menu > li{
+    position:relative;
+    float:left;
+    margin:0 3px;
+}
+
+.sf-menu > li > a {
+    text-decoration:none;
+    display:block;
+    font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    line-height:22px;
+    text-transform:uppercase;
+    color:#333;
+    padding:7px 8px;
+}
+
+.sf-menu > li.current > a, .sf-menu > li:hover > a, .sf-menu > li.sfHover > a {
+    color:#fff;
+    text-decoration:none;
+    background:#333;
+}
+
+.sf-menu li:hover ul,.sf-menu li.sfHover ul{top:37px; left:0; z-index:999;}
+.sf-menu li:hover li ul,ul.sf-menu li.sfHover li ul{top:-999em}
+.sf-menu li.current,.sf-menu li:hover,.sf-menu li.sfHover{
+    text-decoration:none;
+}
+.sf-menu li li a{
+    display:block;
+    margin:0;
+    position:relative;
+    text-decoration:none;
+    font-size:14px;
+    line-height:18px;
+    color:#fff;
+    overflow:hidden;
+    padding:5px 5px 5px 15px;
+    text-transform:uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.sf-menu li li > a:hover, .sf-menu li li.sfHover > a, .sf-menu li li.current > a{
+    color:#333;
+    background:#fff;
+}
+
+.sf-menu li li{
+    float:none;
+    position:relative;
+}
+
+.sf-menu li li:hover ul,ul.sf-menu li li.sfHover ul{left:186px;top:0;}
+

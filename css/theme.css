@@ -188,3 +188,118 @@ blockquote p {
 #membershipImage{
     margin-top: 20px;
 }
+
+
+/*AXWARE STYLES*/
+ .rowhigh {
+     background-color: #F0F0F0
+ }
+
+.rowlow {
+    background-color: #FFFFFF
+}
+
+.rowhighbreak {
+    background-color: #F0F0F0;
+    page-break-before: always
+}
+
+.rowlowbreak {
+    background-color: #FFFFFF;
+    page-break-before: always
+}
+
+/*BODY {*/
+/*font-family: verdana;*/
+/*font-size: 100%*/
+/*}*/
+
+/*p {*/
+/*margin-top: .6em;*/
+/*margin-bottom: .6em*/
+/*}*/
+
+/*p.bigfix {*/
+/*margin-top: -.4em;*/
+/*margin-bottom: 0em;*/
+/*}*/
+
+/*p.margin {*/
+/*margin-left: 2em;*/
+/*margin-top: -1.75em;*/
+/*}*/
+
+/*table {*/
+/*font-size: 80%;*/
+/*margin-top: 1em;*/
+/*margin-bottom: 1em*/
+/*}*/
+
+H1 {
+    text-align: center;
+    font-family: Arial;
+    /*font-size: 125%;*/
+    font-weight: bold;
+    color: #0000FF
+}
+
+H2 {
+    text-align: center;
+    font-family: Arial;
+    /*font-size: 120%;*/
+    font-weight: bold;
+    color: #0000FF
+}
+
+H3 {
+    text-align: center;
+    font-family: Arial;
+    /*font-size: 110%;*/
+    font-weight: bold;
+    color: #0000FF
+}
+
+th {
+    color: #FFFFFF;
+    font-family: Arial;
+    /*font-size: 100%;*/
+    font-weight: bold;
+    background-color: #000099
+}
+
+/*td {*/
+    /*vertical-align: top*/
+/*}*/
+
+.bestt {
+    font-weight: bold
+}
+
+/*a.nav:link {*/
+    /*color: #f0f0f0*/
+/*}*/
+
+/*a.nav:visited {*/
+    /*color: #e0e0e0*/
+/*}*/
+
+/*a.nav:hover {*/
+    /*color: #FFFFFF*/
+/*}*/
+
+/*a.nav:active {*/
+    /*color: #f0f0f0*/
+/*}*/
+
+/*@media all {*/
+    /*.page-break {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+
+/*@media print {*/
+    /*.page-break {*/
+        /*display: block;*/
+        /*page-break-before: always;*/
+    /*}*/
+

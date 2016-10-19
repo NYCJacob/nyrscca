@@ -1,13 +1,21 @@
 /*this is modification of original main class css*/
 
-body{
-    background:url(../images/body-bg.jpg) repeat-y 50% 0;
+/*this was needed to get empty sidebar for background images*/
+body, html, .container-fluid, .right-column, .left-column, .content, .page-content {
+    height: 100%;
+}
+
+body {
     font-family: 'Open Sans', sans-serif;
-    /*font-size:14px;*/
-    /*line-height:25px;*/
-    color:#333;
-    /*position:relative;*/
-    /*min-width:960px;*/
+}
+
+.left-column {
+    background: url(../images/col-1-bg.jpg) repeat-x;
+    background-attachment: fixed;
+}
+
+.right-column {
+    background:url(../images/col-2-bg.jpg) repeat-x;
 }
 
 div#navbar {
@@ -25,29 +33,52 @@ img{
 }
 
 .content{
+    /*these lines trying to prevent overflow problems*/
+    overflow-y:scroll;
+    max-height: 100vh;
+    /*                    ***************/
     margin:0 auto;
     position:relative;
     /*width:960px;*/
-    width: 100%;
-    background-color: #ffffff;
+    /*width: 100%;*/
+    /*background-color: #ffffff;*/
     border-radius:4px;
     /*padding:0 0 10px 0;*/
     padding: .8em;
 }
-@media (min-width: 768px){
-    .content{
-        width: 90%;
+
+@media all and (max-width: 750px) {
+    p {
+        font-size: 14px !important;   /*bootstrap value*/
+        font-size: 2.1vw !important;  /*dynamic sizing */
     }
+
+    h1 {
+        font-size: 5.9vw !important; /*dynamic sizing */
+    }
+
+    h2 {
+        font-size: 4.5vw !important;  /*dynamic sizing */
+    }
+
+    h3 {
+        font-size: 3.3vw !important; /*dynamic sizing */
+    }
+
+    h4 {
+        font-size: 3vw !important; /*dynamic sizing */
+    }
+
+}
+
+#welcome-heading {
+    margin-top: 0;
+    padding-right: .1em;
 }
 
 .navbar-brand{
     /*background: url(../images/logo.png) no-repeat 0 0;*/
 
-}
-
-#welcomePara{
-    line-height: 1.5;
-    margin-right: 5em;
 }
 
 
@@ -190,6 +221,34 @@ blockquote p {
 }
 
 
+/*accordian glyph customization */
+.panel-heading [data-toggle="collapse"]:after
+{
+    font-family: 'Glyphicons Halflings';
+    content: "\e072";
+    float: right;
+    color: #0000ff;
+    font-size: 18px;
+    line-height: 22px;
+
+    -webkit-transform: rotate(90deg);
+    -moz-transform:    rotate(90deg);
+    -ms-transform:     rotate(90deg);
+    -o-transform:      rotate(90deg);
+    transform:         rotate(90deg);
+}
+.panel-heading [data-toggle="collapse"].collapsed:after
+{
+    -webkit-transform: rotate(0deg);
+    -moz-transform:    rotate(0deg);
+    -ms-transform:     rotate(0deg);
+    -o-transform:      rotate(0deg);
+    transform:         rotate(0deg);
+}
+
+
+
+
 /*AXWARE Styles*/
 
 .axware .rowhigh {
@@ -304,3 +363,7 @@ blockquote p {
             page-break-before: always;
         }
     }
+
+.annoucement{
+    margin: 0 auto;
+}

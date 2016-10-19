@@ -55,8 +55,17 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="calendar.html">Calendar</a></li>
-                        <li><a href="results.html">Results</a></li>
-                        <li class="current"><a href="join.html">Join</a></li>
+                        <li class="dropdown">
+                            <a id="dropResults" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Results
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="results2016.html">2016 Results</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="results.html">2015</a></li>
+                            </ul>
+                        </li>                        <li class="current"><a href="join.html">Join</a></li>
                     </ul>
                     <!-- end navbar-nav -->
                     <ul class="nav navbar-nav navbar-right sf-menu">
@@ -102,13 +111,16 @@
             </div>
         </nav>
     </header>
-
-        <div class="row center-block sponsors">
-            <div class="col-sm-4 hidden-xs text-center">
-                <a href="http://www.highlinedetails.com/"> <img class="img-responsive img-rounded" src="images/highlineLogo.jpg"></a></div>
-            <div class="col-sm-4 hidden-xs text-center">
-                <a href="http://www.vasracingsuits.com/"> <img class="img-responsive img-rounded" src="images/vas_revised.jpg"></a></div>
-            <div class="col-sm-4 hidden-xs text-center"><h3>We love sponsors!</h3></div>
+        <div class="row center-block sponsors clearfix">
+            <div class="col-xs-4">
+                <a href="http://www.crimsonsimulation.com"> <img class="img-responsive img-rounded" src="images/crimson_nyrscca.jpg"></a>
+            </div>
+            <div class="col-xs-4 text-center">
+                <a href="http://www.tkxperformance.com/"> <img class="img-responsive img-rounded" src="images/TKX_050216_02.jpg"></a>
+            </div>
+            <div class="col-xs-4 ">
+                <a href="http://www.vasracingsuits.com/"> <img class="img-responsive img-rounded" src="images/vas_revised.jpg"></a>
+            </div>
         </div>
 
     <!-- Content -->
